@@ -1,0 +1,21 @@
+INSERT INTO Products (ProductID, ProductName, Price)
+VALUES
+    (1, 'Ябълка', 1.20),
+    (2, 'Банан', 1.50),
+    (3, 'Мляко', 2.30),
+    (4, 'Хляб', 1.80),
+    (5, 'Сирене', 5.90),
+    (6, 'Яйца', 3.50),
+    (7, 'Картофи', 2.20),
+    (8, 'Пилешко месо', 8.75),
+    (9, 'Риба', 12.99),
+    (10, 'Шоколад', 3.99);
+SELECT * FROM Products 
+
+INSERT INTO Products (ProductID, ProductName, Price)
+VALUES (11, 'Вино', 60.00);
+
+SELECT * FROM Products 
+
+DELETE FROM Products
+WHERE Price < 20.00;

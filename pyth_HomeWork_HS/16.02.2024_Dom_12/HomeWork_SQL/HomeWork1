@@ -1,0 +1,27 @@
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(255),
+    Price DECIMAL(10, 2)
+)
+
+INSERT INTO Products (ProductID, ProductName, Price)
+VALUES
+    (1, 'Ябълка', 1.20),
+    (2, 'Банан', 1.50),
+    (3, 'Мляко', 2.30),
+    (4, 'Хляб', 1.80),
+    (5, 'Сирене', 5.90),
+    (6, 'Яйца', 3.50),
+    (7, 'Картофи', 2.20),
+    (8, 'Пилешко месо', 8.75),
+    (9, 'Риба', 12.99),
+    (10, 'Шоколад', 3.99);
+    
+SELECT * FROM Products 
+
+SELECT ProductName, Price
+FROM Products
+WHERE Price > 100
+ORDER BY Price DESC;
+
+SELECT * FROM Products 
